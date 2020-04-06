@@ -1,12 +1,32 @@
+/*
 const tail = require('../tail');
 const assertEqual = require('../assertEqual');
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-
-// An array with only one element should yield an empty array for its tail
-console.log(tail([1]));
 // An empty array should yield an empty array for its tail
 console.log(tail([]));
+*/
+
+
+const assert = require('chai').assert;
+const tail   = require('../tail');
+
+describe("#head", () => {
+  it("Check the original array doesn't change length", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.strictEqual(words.length, 3);
+  });
+
+  it("An array with only one element should yield an empty array for its tail", () => {
+    const input = tail([1]);
+    assert.deepEqual(input, []);
+  });
+
+  it("An empty array should yield an empty array for its tail", () => {
+    const input = tail([]);
+    assert.deepEqual(input, []);
+  });
+
+ 
+
+});
