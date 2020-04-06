@@ -1,3 +1,4 @@
+/*
 const assertArraysEqual = function(actual, expected) {
 
   if (eqArrays(actual,expected)) {
@@ -6,7 +7,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🤬🤬🤬 Assertion Failed: "${actual}" !== "${expected}"`);
   }
 
-};
+}; 
 
 const eqArrays = function(arrayOne, arrayTwo) {
 
@@ -29,6 +30,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
 
 }
+*/
 
 /*
 The array to work with
@@ -48,6 +50,9 @@ const takeUntil = function(array, callback) {
   return resultArray;
 }
 
+module.exports = takeUntil;
+
+/*
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
@@ -59,7 +64,7 @@ const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 
 assertArraysEqual(results2,[ 'I\'ve', 'been', 'to', 'Hollywood' ])
-
+*/
 
 /* EXPECTED OUTPUT 
 [ 1, 2, 5, 7, 2 ]

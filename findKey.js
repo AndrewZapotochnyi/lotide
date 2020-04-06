@@ -6,7 +6,9 @@ let findKey = function(object, callback ) {
   }
 }
 
+module.exports = findKey;
 
+/*
 
 let testObject = findKey({
   "Blue Hill": { stars: 1 },
@@ -28,3 +30,4 @@ const assertEqual = function(actual, expected) {
 
 // TEST CODE
 assertEqual(testObject, "noma");
+*/

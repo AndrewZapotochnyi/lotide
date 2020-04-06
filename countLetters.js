@@ -1,4 +1,4 @@
-let letters = 'lighthouse in the house';
+// let letters = 'lighthouse in the house';
 
 const countLetters = function(sentence) {
   results = {};
@@ -14,6 +14,8 @@ const countLetters = function(sentence) {
   return results;
 }
 
-console.log(countLetters(letters));
-console.log(countLetters("ooooooooooooooooooowww"));
-console.log(countLetters(""));
+// console.log(countLetters(letters));
+// console.log(countLetters("ooooooooooooooooooowww"));
+// console.log(countLetters(""));
+
+module.exports = countLetters;

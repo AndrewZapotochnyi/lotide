@@ -1,3 +1,4 @@
+/*
 const assertArraysEqual = function(actual, expected) {
 
   if (eqArrays(actual,expected)) {
@@ -6,7 +7,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🤬🤬🤬 Assertion Failed: "${actual}" !== "${expected}"`);
   }
 
-};
+}; 
 
 const eqArrays = function(arrayOne, arrayTwo) {
 
@@ -38,7 +39,8 @@ The map function will return a new array based on the
 results of the callback function. */
 
 
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
+
 
 const map = function(array, callback) {
   const results = [];
@@ -48,8 +50,11 @@ const map = function(array, callback) {
   return results;
 }
 
+/*
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
-assertArraysEqual(results1, ["g","c","t","m","t"]);
+assertArraysEqual(results1, ["g","c","t","m","t"]); */
+
+module.exports = map;
 

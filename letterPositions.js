@@ -1,4 +1,4 @@
-let letters = 'whatever';
+// let letters = 'whatever';
 
 const letterPositions = function(sentence) {
   results = {};
@@ -14,6 +14,9 @@ const letterPositions = function(sentence) {
   return results;
 }
 
+module.exports = letterPositions;
+
+/*
 console.log(letterPositions(letters));
 
 
@@ -51,3 +54,4 @@ const eqArrays = function(arrayOne, arrayTwo) {
 
 console.log(assertArraysEqual(letterPositions("hello").e, [1]));
 console.log(assertArraysEqual(letterPositions("whatever").r, [7]));
+*/
